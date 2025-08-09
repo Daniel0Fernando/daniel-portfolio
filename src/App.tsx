@@ -8,12 +8,18 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
+// This line gets the current environment mode from Vite.
+// It will be 'production' when you run 'npm run build',
+// and 'development' when you run 'npm run dev'.
+const basename = import.meta.env.MODE === 'production' ? '/daniel-portfolio/' : '/';
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      {/* The basename prop now uses the dynamic variable. */}
+      <BrowserRouter basename={basename}>
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="*" element={<NotFound />} />

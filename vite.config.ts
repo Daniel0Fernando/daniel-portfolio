@@ -1,22 +1,21 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react-swc' // Using the faster SWC plugin from Lovable
+import react from '@vitejs/plugin-react-swc'
 import path from 'path'
 
-// https://vitejs.dev/config/
-export default defineConfig({
-  // This 'base' property is ESSENTIAL for GitHub Pages deployment
-  base: "/daniel-portfolio/",
+// The export is now a function that receives the 'mode'
+export default defineConfig(({ mode }) => ({
+  // This line conditionally sets the base path.
+  // It's '/' for local development and '/daniel-portfolio/' for production builds.
+  base: mode === 'production' ? '/daniel-portfolio/' : '/',
 
   plugins: [react()],
   resolve: {
-    // This alias configuration is REQUIRED for your app's imports to work
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
   },
   server: {
-    // These are nice-to-have settings for local development
     port: 3000,
     open: true,
   },
-})
+}));
