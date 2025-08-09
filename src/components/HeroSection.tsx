@@ -1,7 +1,9 @@
-
 import { ArrowDown, Github, Linkedin, Mail, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+
+// 1. Import the profile image AND the CV PDF file
 import profileImage from '@/assets/daniel-profile.jpg';
+import cvUrl from '@/assets/Daniel_Fernando_CV.pdf'; // <-- ADD THIS LINE
 
 const HeroSection = () => {
   const scrollToAbout = () => {
@@ -11,10 +13,12 @@ const HeroSection = () => {
     }
   };
 
+  // 2. Modify the downloadCV function to use the imported URL
   const downloadCV = () => {
     const link = document.createElement('a');
-    link.href = '/Daniel_Fernando_CV.pdf';
-    link.download = 'Daniel_Fernando_CV.pdf';
+    // The 'cvUrl' variable now holds the correct path
+    link.href = cvUrl; // <-- CHANGE THIS LINE
+    link.download = 'Daniel_Fernando_CV.pdf'; // You can keep the desired filename here
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -34,8 +38,6 @@ const HeroSection = () => {
             <div className="space-y-8">
               <div className="space-y-4">
                 <div className="flex items-center space-x-2 text-primary">
-                  
-                  
                 </div>
                 
                 <h1 className="text-4xl md:text-6xl font-bold leading-tight">
@@ -91,7 +93,6 @@ const HeroSection = () => {
                 <div className="relative w-80 h-80 rounded-full overflow-hidden border-4 border-primary/20 glow-primary">
                   <img src={profileImage} alt="Daniel Fernando" className="w-full h-full object-cover" />
                 </div>
-                {/* Floating Elements */}
                 <div className="absolute -top-4 -right-4 w-8 h-8 bg-primary rounded-full animate-bounce"></div>
                 <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-accent rounded-full animate-pulse"></div>
               </div>
@@ -100,7 +101,6 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <ArrowDown className="text-muted-foreground" size={24} />
       </div>

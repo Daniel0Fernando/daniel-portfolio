@@ -1,7 +1,9 @@
-
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+
+// 1. Import the CV PDF file here as well
+import cvUrl from '@/assets/Daniel_Fernando_CV.pdf'; // <-- ADD THIS LINE
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,9 +34,10 @@ const Navigation = () => {
     }
   };
 
+  // 2. Modify this downloadCV function too
   const downloadCV = () => {
     const link = document.createElement('a');
-    link.href = '/Daniel_Fernando_CV.pdf';
+    link.href = cvUrl; // <-- CHANGE THIS LINE
     link.download = 'Daniel_Fernando_CV.pdf';
     document.body.appendChild(link);
     link.click();
@@ -55,7 +58,6 @@ const Navigation = () => {
             Daniel Fernando
           </div>
 
-          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <button
@@ -77,7 +79,6 @@ const Navigation = () => {
             </Button>
           </div>
 
-          {/* Mobile Menu Button */}
           <Button
             variant="ghost"
             size="sm"
@@ -88,7 +89,6 @@ const Navigation = () => {
           </Button>
         </div>
 
-        {/* Mobile Navigation */}
         {isMobileMenuOpen && (
           <div className="md:hidden mt-4 pb-4 border-t border-border pt-4">
             <div className="flex flex-col space-y-4">
