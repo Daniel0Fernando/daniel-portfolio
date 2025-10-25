@@ -40,13 +40,13 @@ const ProjectsSection = () => {
     icon: <TrendingUp className="w-6 h-6" />
   }];
   const uiuxProjects: Project[] = [{
-    title: "Event Management Dashboard UI/UX",
-    description: "Comprehensive event booking and performance dashboard featuring intuitive user flows, detailed design system, and advanced analytics visualization for event organizers.",
+    title: "Smart Glasses Landing Page",
+    description: "High-impact, photography-driven landing page for a smart-glasses brand featuring bold typographic hero, product showcase with pricing, customization options, and conversion-focused newsletter & shop interactions.",
     technologies: ["Figma", "Design Systems", "User Research", "Prototyping", "Analytics"],
     category: "UI/UX Design",
-    icon: <Palette className="w-6 h-6" />,
-    designFeatures: ["User Flow Mapping", "Design System Creation", "Analytics Dashboard", "Mobile Responsive"],
-    prototypeUrl: "https://www.figma.com/proto/HOC0Q4jhVSXO9IM6N3VuzD/Event-Booking-OG?node-id=62-5432&p=f&t=gAkHX0m1E33KXZWN-1&scaling=scale-down&content-scaling=fixed&page-id=62%3A3583&starting-point-node-id=62%3A5432"
+    icon: <Monitor className="w-6 h-6" />,
+    designFeatures: ["Bold Typography", "Immersive Imagery", "Minimal Layout", "Product Focused"],
+    prototypeUrl: "https://www.figma.com/proto/ZM7whc1SVx0Jb5A4BqvbMG/Trial-Project-2?node-id=6-2&p=f&t=NL7AcrIvMVWysW9l-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1"
   }, {
     title: "Centralized HR & IT Asset Dashboard",
     description: "Enterprise-level employee device and HR management system designed for Crextio Company, streamlining asset tracking and employee onboarding processes.",
@@ -55,6 +55,14 @@ const ProjectsSection = () => {
     icon: <Monitor className="w-6 h-6" />,
     designFeatures: ["Asset Management", "Employee Portal", "Admin Dashboard", "Reporting System"],
     prototypeUrl: "https://www.figma.com/proto/duFOFDooZxIWPiYxyLPUpz/HR-Website?node-id=56-380&p=f&t=Pnx6YpCcPxIDqW73-1&scaling=scale-down&content-scaling=fixed&page-id=56%3A153&starting-point-node-id=56%3A380"
+  }, {
+    title: "Krypto NFT Marketplace Landing Page",
+    description: "Modern web landing page for an NFT marketplace, featuring bold typographic hierarchy, dark-gradient branding, illustrative visuals, clear CTAs, and trust signals to drive conversions.",
+    technologies: ["Figma", "Design Systems", "Prototyping"],
+    category: "UI/UX Design",
+    icon: <Monitor className="w-6 h-6" />,
+    designFeatures: ["Modern Aesthetics", "Responsive Layout", "Visual Hierarchy", "Conversion Focused"],
+    prototypeUrl: "https://www.figma.com/proto/Y0Wa925dSdvfbuEsXdj3SM/Trial-Project-3?node-id=5-80&p=f&t=FMH2gnzALkShku8c-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1"
   }];
   const allProjects = activeCategory === 'academic' ? academicProjects : uiuxProjects;
   const categories = [{
