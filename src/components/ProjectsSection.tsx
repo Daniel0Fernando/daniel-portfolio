@@ -48,14 +48,14 @@ const ProjectsSection = () => {
     designFeatures: ["Bold Typography", "Immersive Imagery", "Minimal Layout", "Product Focused"],
     prototypeUrl: "https://www.figma.com/proto/ZM7whc1SVx0Jb5A4BqvbMG/Trial-Project-2?node-id=6-2&p=f&t=NL7AcrIvMVWysW9l-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1"
   }, {
-    title: "Centralized HR & IT Asset Dashboard",
-    description: "Enterprise-level employee device and HR management system designed for Crextio Company, streamlining asset tracking and employee onboarding processes.",
-    technologies: ["Figma", "Enterprise UX", "System Design", "Workflow Optimization"],
+    title: "Aurora Wellness Homepage Design",
+    description: "Calming, premium homepage design for a wellness & lifestyle brand focused on mindfulness, organic self-care, and holistic living. The layout emphasizes serenity through soft imagery, elegant typography, and a nature-inspired color palette, guiding users smoothly from brand introduction to services, testimonials, and booking actions.",
+    technologies: ["Figma", "UI Design", "UX Principles", "Wireframing","Visual Hierarchy","Design Systems"],
     category: "UI/UX Design",
     icon: <Monitor className="w-6 h-6" />,
-    designFeatures: ["Asset Management", "Employee Portal", "Admin Dashboard", "Reporting System"],
-    prototypeUrl: "https://www.figma.com/proto/duFOFDooZxIWPiYxyLPUpz/HR-Website?node-id=56-380&p=f&t=Pnx6YpCcPxIDqW73-1&scaling=scale-down&content-scaling=fixed&page-id=56%3A153&starting-point-node-id=56%3A380"
-  }, {
+    designFeatures: ["Minimal & Calming UI", "Photography-Led Hero Section", "Clear Visual Hierarchy", "Card-Based Offerings Layout"],
+    prototypeUrl: "https://www.figma.com/proto/qMDwBZ8Cu2G1Q7FsaMihbE/Aurora-Wellness-%E2%80%93-Homepage?node-id=2-3&p=f&t=WJFlb6P85Gz4Y122-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A3"
+  },{
     title: "Krypto NFT Marketplace Landing Page",
     description: "Modern web landing page for an NFT marketplace, featuring bold typographic hierarchy, dark-gradient branding, illustrative visuals, clear CTAs, and trust signals to drive conversions.",
     technologies: ["Figma", "Design Systems", "Prototyping"],
@@ -63,6 +63,14 @@ const ProjectsSection = () => {
     icon: <Monitor className="w-6 h-6" />,
     designFeatures: ["Modern Aesthetics", "Responsive Layout", "Visual Hierarchy", "Conversion Focused"],
     prototypeUrl: "https://www.figma.com/proto/Y0Wa925dSdvfbuEsXdj3SM/Trial-Project-3?node-id=5-80&p=f&t=FMH2gnzALkShku8c-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1"
+  }, {
+    title: "Centralized HR & IT Asset Dashboard",
+    description: "Enterprise-level employee device and HR management system designed for Crextio Company, streamlining asset tracking and employee onboarding processes.",
+    technologies: ["Figma", "Enterprise UX", "System Design", "Workflow Optimization"],
+    category: "UI/UX Design",
+    icon: <Monitor className="w-6 h-6" />,
+    designFeatures: ["Asset Management", "Employee Portal", "Admin Dashboard", "Reporting System"],
+    prototypeUrl: "https://www.figma.com/proto/duFOFDooZxIWPiYxyLPUpz/HR-Website?node-id=56-380&p=f&t=Pnx6YpCcPxIDqW73-1&scaling=scale-down&content-scaling=fixed&page-id=56%3A153&starting-point-node-id=56%3A380"
   }];
   const allProjects = activeCategory === 'academic' ? academicProjects : uiuxProjects;
   const categories = [{
