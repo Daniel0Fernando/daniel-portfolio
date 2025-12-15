@@ -70,7 +70,7 @@ const ProjectsSection = () => {
     category: "UI/UX Design",
     icon: <Monitor className="w-6 h-6" />,
     designFeatures: ["Asset Management", "Employee Portal", "Admin Dashboard", "Reporting System"],
-    prototypeUrl: "https://www.figma.com/proto/duFOFDooZxIWPiYxyLPUpz/HR-Website?node-id=56-380&p=f&t=Pnx6YpCcPxIDqW73-1&scaling=scale-down&content-scaling=fixed&page-id=56%3A153&starting-point-node-id=56%3A380"
+    prototypeUrl: "https://www.figma.com/proto/duFOFDooZxIWPiYxyLPUpz/HR-Website?node-id=56-154&p=f&t=dZeBbP7tTsymihB2-1&scaling=scale-down&content-scaling=fixed&page-id=56%3A153&starting-point-node-id=56%3A154"
   }];
   const allProjects = activeCategory === 'academic' ? academicProjects : uiuxProjects;
   const categories = [{
