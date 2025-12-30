@@ -47,7 +47,7 @@ const ProjectsSection = () => {
     icon: <Monitor className="w-6 h-6" />,
     designFeatures: ["Bold Typography", "Immersive Imagery", "Minimal Layout", "Product Focused"],
     prototypeUrl: "https://www.figma.com/proto/ZM7whc1SVx0Jb5A4BqvbMG/Trial-Project-2?node-id=6-2&p=f&t=NL7AcrIvMVWysW9l-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1"
-  }, {
+  },{
     title: "Aurora Wellness Homepage Design",
     description: "Calming, premium homepage design for a wellness & lifestyle brand focused on mindfulness, organic self-care, and holistic living. The layout emphasizes serenity through soft imagery, elegant typography, and a nature-inspired color palette, guiding users smoothly from brand introduction to services, testimonials, and booking actions.",
     technologies: ["Figma", "UI Design", "UX Principles", "Wireframing","Visual Hierarchy","Design Systems"],
@@ -55,6 +55,14 @@ const ProjectsSection = () => {
     icon: <Monitor className="w-6 h-6" />,
     designFeatures: ["Minimal & Calming UI", "Photography-Led Hero Section", "Clear Visual Hierarchy", "Card-Based Offerings Layout"],
     prototypeUrl: "https://www.figma.com/proto/qMDwBZ8Cu2G1Q7FsaMihbE/Aurora-Wellness-%E2%80%93-Homepage?node-id=2-3&p=f&t=WJFlb6P85Gz4Y122-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A3"
+  },{
+    title: "VITASIP Product Showcase Page",
+    description: "Visually immersive product page design for a flavored drink brand, showcasing four variants within a single interactive page. The design features bold typography, flavor-based color themes, and a product-first layout to boost brand recall and purchase intent, with intuitive navigation, pricing, and add-to-cart actions.",
+    technologies: ["Figma", "UI Design", "Prototyping", "Design Systems","E-commerce UI Patterns"],
+    category: "UI/UX Design",
+    icon: <Monitor className="w-6 h-6" />,
+    designFeatures: ["Bold Typography", "Flavor-Based Color Themes", "Conversion-Focused Layout", "Product Carousel"],
+    prototypeUrl: "https://www.figma.com/proto/swGc7nGUDqerYiMgozrRXS/VITASIP?node-id=1-4&p=f&t=v3D6YRLooegkdHqZ-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1"
   },{
     title: "Krypto NFT Marketplace Landing Page",
     description: "Modern web landing page for an NFT marketplace, featuring bold typographic hierarchy, dark-gradient branding, illustrative visuals, clear CTAs, and trust signals to drive conversions.",
